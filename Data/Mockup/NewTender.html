@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
+        rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="AdminLTE.min.css">
+        <link rel="stylesheet" href="Styles\AdminLTE.css">
+        <link rel="stylesheet" href="Styles\global-style.css">
+        <link rel="stylesheet" href="Styles\global-style-violet-org.css">
+        <link rel="stylesheet" href="Styles\skins\skin-purple.css">
+        <link rel="stylesheet" href="Untitled.css">
+    </head>
+    
+    <body>
+        <div class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><span>OTPedia</span></a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="Home.html">Home</a>
+                        </li>
+                        <li class="active">
+                            <a href="Tender.html">Tender</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Create New Tender</h4>
+                        <form role="form">
+                            <div class="row">
+                                <div class="form-group col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                                    <label class="control-label" for="tenderCode">Tender Code</label>
+                                    <input class="form-control" id="tenderCode" placeholder="Enter Tender Code"
+                                    type="text">
+                                </div>
+                                <div class="form-group col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                                    <label class="control-label" for="tenderName">Tender Name</label>
+                                    <input class="form-control" id="tenderName" type="text"
+                                    placeholder="Enter Tender Name">
+                                </div>
+                                <div class="form-group col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                                    <label class="control-label" for="expiredDate">Expired Date</label>
+                                    <input class="form-control" id="expiredDate" type="date">
+                                    <span class="fa"></span>
+                                </div>
+                                <div class="form-group col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                                    <label class="control-label">Region</label>
+                                    <select class="form-control">
+                                        <option>AsPac</option>
+                                        <option>WE</option>
+                                        <option>EEMEA</option>
+                                        <option>Americas</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                                    <label class="control-label" for="annualDemand">Annual Demand</label>
+                                    <input class="form-control" id="annualDemand" type="number"
+                                    min="1">
+                                    <span class="fa"></span>
+                                </div>
+                                <div class="form-group col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                                    <label class="control-label" for="orderFrequency">Order Frequency</label>
+                                    <input class="form-control" id="orderFrequency"
+                                    type="number" min="1">
+                                    <span class="fa"></span>
+                                </div>
+                                <div class="form-group col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                                    <label class="control-label" for="brand">Brand</label>
+                                    <input class="form-control" id="brand" type="text">
+                                    <span class="fa"></span>
+                                </div>
+                                <div class="form-group col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                                    <label class="control-label" for="profile">Profile</label>
+                                    <input class="form-control" id="profile" type="text">
+                                    <span class="fa"></span>
+                                </div>
+                            </div>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th width="3%">
+                                            <input type="checkbox">
+                                        </th>
+                                        <th width="27%">Supplier Code</th>
+                                        <th>Supplier Name</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>AMC</td>
+                                        <td>Amcor</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>NT</td>
+                                        <td>TienWahPress</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <a type="button" class="btn btn-danger pull-right" name="Cancel" href="Tender.html">
+                    <i class="fa fa-times-circle pr-5"></i>Cancel</a>
+                                    <button type="submit" class="btn btn-success pull-right mr-10">
+                                        <i class="fa fa-floppy-o pr-5"></i>Create</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
