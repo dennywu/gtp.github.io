@@ -10,7 +10,7 @@ build
 *.cache
 deploy
 *.rar
-*.txt
+*.txt 
 *.pdb
 *.tmp
 .DS_Store
